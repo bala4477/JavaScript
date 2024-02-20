@@ -1,0 +1,47 @@
+<form>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="age">Age</label>
+    <input type="text" name="age" id="age"><br>
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" value="male" class="gender">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" class="gender">
+    <label for="male">FeMale</label><br>
+    <label for="course">Course</label>
+    <select name="course" id="course">
+        <option value="JavaScript">JavaScript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+    </select><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email"><br>
+    <button onclick="add()">Save</button>
+</form>
+<div id="todo">
+    <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+        <th>COURSE</th>
+        <th>GENDER</th>
+        <th>EMAIL</th>
+        <th>ACTION</th>
+    </tr>
+</div>
+
+<script>
+    var name=document.getElementById("name")
+    var age=document.getElementById("age")
+    var gender=document.getElementsByClassName("gender")
+    var course=document.getElementById("course")
+    var email=document.getElementById("email")
+
+    var div=document.getElementById("todo")
+    function add()
+    {
+        var tr=document.createElement("tr")
+        tr.innerHTML="<td>"+name.value+"</td>"
+        div.append(tr)
+    }
+
+</script>

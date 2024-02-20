@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./todo.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Form</h2>
+<div class="form">
+    <table>
+        <tr>
+            <td><label for="name" class="label">Name</label></td>
+            <td><input type="text" name="name" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="age" class="label">Age</label></td>
+            <td><input type="text" name="age" id="age"></td>        
+        </tr>
+        <tr>
+            <td><label for="gender" class="label">Gender</label></td>
+            <td><input type="radio" name="gender" class="gender" value="Male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" class="gender" value="Female" id="female">
+                <label for="female">Female</label></td>
+        </tr>
+        <tr>
+            <td><label for="course" class="label">Course</label></td>
+            <td><select name="course" id="course">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="email" class="label">Email</label></td>
+            <td>            <input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" onclick="add()" id="btn">Save</button></td>
+        </tr>      
+    </table>
+</div>
+<table id="container">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+</table>
+<script src="./todo.js"></script>
+</body>
+</html>

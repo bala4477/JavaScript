@@ -1,0 +1,35 @@
+table{
+    width: 1000px;
+    border-collapse: collapse;
+    margin-top:50px;
+}
+td,th{
+    border: 1px solid;
+
+}
+tr{
+    text-align: center;
+    height: 50px;
+}
+#delbtn{
+    background-color: red;
+}
+.form table{
+    width: 200px;
+    border-collapse: collapse;
+}
+.form table td:nth-child(2)
+{
+    text-align: left;
+}
+.form table tr{
+    height: 30px;
+}
+#btn{
+   padding-left: 90px;
+   padding-right: 95px;
+   background-color: aqua;
+}
+.form table td,.form table th{
+    border: 5px double;
+}
